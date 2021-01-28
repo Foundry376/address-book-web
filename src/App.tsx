@@ -1,6 +1,11 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import logo from "./logo.svg";
+import "./App.css";
+
+import { fetchContacts } from "./api";
+
+// Test to make sure that we're able to reach the contacts API
+fetchContacts().then(console.log);
 
 function App() {
   return (
